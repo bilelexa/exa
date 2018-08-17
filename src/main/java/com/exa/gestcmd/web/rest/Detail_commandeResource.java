@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class Detail_commandeResource {
 
     private final Detail_commandeRepository detail_commandeRepository;
