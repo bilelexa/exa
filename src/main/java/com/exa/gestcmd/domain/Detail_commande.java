@@ -1,5 +1,6 @@
 package com.exa.gestcmd.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import javax.persistence.*;
@@ -13,10 +14,10 @@ public class Detail_commande implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long idarticle;
+    private Long article_id;
     @DecimalMin(value = "0")
     private Double qtcom;
     @ManyToOne
-    @JsonIgnoreProperties("")
+    
     private Commande commande;
 }

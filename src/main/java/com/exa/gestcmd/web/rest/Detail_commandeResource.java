@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/")
+@CrossOrigin
 public class Detail_commandeResource {
 
     private final Detail_commandeRepository detail_commandeRepository;
